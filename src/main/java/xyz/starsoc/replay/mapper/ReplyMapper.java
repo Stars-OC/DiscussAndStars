@@ -8,6 +8,6 @@ import xyz.starsoc.replay.pojo.Reply;
 @Mapper
 public interface ReplyMapper extends BaseMapper<Reply> {
 
-    @Select("select scores from reply where content_id = #{contentId}")
+    @Select("select score from reply where content_id = #{contentId}")
     Integer getScore(Long contentId);
 }
