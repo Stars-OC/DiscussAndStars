@@ -2,7 +2,6 @@ package xyz.starsoc.replay.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import xyz.starsoc.replay.mapper.DiscussMapper;
 import xyz.starsoc.replay.pojo.Discuss;
 import xyz.starsoc.replay.pojo.PageList;
 import xyz.starsoc.replay.service.DiscussService;

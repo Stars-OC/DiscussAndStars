@@ -34,6 +34,8 @@ public class MybatisPlusConfig implements MetaObjectHandler {
         long time = System.currentTimeMillis();
         this.setFieldValByName("updateTime", time, metaObject);
         this.setFieldValByName("createTime", time, metaObject);
+        // 将资源进行填充 直接存Json进数据库
+        this.setFieldValByName("resources", "{\"images\":[],\"videos\":[],\"audios\":[]}", metaObject);
     }
 
     @Override
